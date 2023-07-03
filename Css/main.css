@@ -14,9 +14,7 @@ h1{
     line-height: 100%;
     letter-spacing: 0.4rem;
     font-weight: 500;
-    color: var(--darkGreen);
-    margin: 0;
-    padding: 0;
+    color: var(--darkGreen);   
 }
 h2{
     color: var(--darkGreen);
@@ -34,6 +32,7 @@ h2{
 }
 
 .header{
+    z-index: 100;
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -59,9 +58,9 @@ h2{
 
 .lineSeparate{
     height: 0.2rem;
-    width: 8rem;
+    width: 12rem;
     margin-bottom: 1.2rem;
-    margin-top: 1.2rem;
+    
     background-color: var(--darkGreen);
 }
 .introContainer{
@@ -69,22 +68,16 @@ h2{
     justify-content: space-between;
 }
 
-.coverPhoto{
-    height: 55rem;
-}
-
-.parent {
-    
+.coverPhotoContainer {
     position: relative;
     top: 0;
     left: 0;
   }
   .coverPhoto {
-    
+    height: 55rem;
     position: relative;
     top: 0;
-    left: 0;
-    
+    left: 0;   
   }
   .orangeBox {
     mix-blend-mode: multiply;
@@ -98,6 +91,7 @@ h2{
 
 .introBottom{
     margin-top: 4rem;
+    margin-bottom: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
